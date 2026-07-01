@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Media Kit — Teen Living Center | One More Door</title>
+<meta name="robots" content="noindex" />
+<meta name="description" content="Downloadable photos, logos, and video for the Teen Living Center (by Switchpoint)." />
+<meta name="theme-color" content="#002850" />
+<link rel="icon" type="image/svg+xml" href="../assets/sunburst.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{--navy:#002850;--navy2:#103A68;--ink:#0C2033;--muted:#4B5D6E;--orange:#F07830;--amber:#F8A838;--gold:#F8C858;--cream:#FBF6EC;--cream2:#F3EADA;--disp:'Fraunces',Georgia,serif;--ui:'Outfit',sans-serif;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:var(--ui);color:var(--ink);background:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased;}
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 1.5rem;}
+  h1,h2,h3{font-family:var(--disp);font-weight:500;letter-spacing:-.01em;line-height:1.1;}
+  .topbar{background:var(--navy);color:#fff;}
+  .topbar .row{display:flex;align-items:center;justify-content:space-between;height:56px;}
+  .brand{display:flex;align-items:center;gap:.55rem;text-decoration:none;color:#fff;font-family:var(--disp);font-weight:600;font-size:1.1rem;}
+  .brand img{width:24px;height:24px;}
+  .topbar .tag{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:#9FB4C8;font-weight:600;}
+  header.hero{background:radial-gradient(120% 90% at 90% -20%,rgba(248,168,56,.2),transparent 45%),linear-gradient(180deg,#002850,#00203f);color:#fff;padding:3.4rem 0 3rem;}
+  .eyebrow{display:flex;align-items:center;gap:.55rem;font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:var(--gold);margin-bottom:1rem;}
+  .eyebrow img{width:20px;height:20px;}
+  header.hero h1{font-size:clamp(2.2rem,5.5vw,3.4rem);color:#fff;}
+  header.hero p{color:#CBD8E6;max-width:40rem;margin-top:.9rem;font-size:1.08rem;}
+  header.hero .updated{margin-top:1.2rem;font-size:.82rem;color:#8FA6BC;}
+  section{padding:2.8rem 0;}
+  section h2{font-size:1.7rem;color:var(--navy);}
+  section .note{color:var(--muted);margin-top:.25rem;font-size:.98rem;}
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem;margin-top:1.5rem;}
+  @media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:520px){.grid{grid-template-columns:1fr;}}
+  .card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 1px 0 rgba(0,40,80,.06),0 14px 32px -22px rgba(0,40,80,.4);display:flex;flex-direction:column;}
+  .thumb{aspect-ratio:4/3;background:#EEF2F6 center/cover no-repeat;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+  .thumb img{width:100%;height:100%;object-fit:cover;}
+  .thumb.logo{background:#fff;}
+  .thumb.logo img{object-fit:contain;padding:1.4rem;}
+  .badge{width:100%;height:100%;background:linear-gradient(140deg,var(--navy2),var(--navy));display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;gap:.5rem;}
+  .badge .t{font-family:var(--disp);font-size:1.5rem;color:var(--gold);}
+  .badge svg{width:30px;height:30px;stroke:var(--amber);fill:none;stroke-width:1.6;}
+  .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,32,63,.32);}
+  .play span{width:56px;height:56px;border-radius:50%;background:rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center;}
+  .play span::after{content:"";border-left:16px solid var(--navy);border-top:10px solid transparent;border-bottom:10px solid transparent;margin-left:4px;}
+  .cbody{padding:.9rem 1rem 1.1rem;display:flex;flex-direction:column;gap:.7rem;flex:1;}
+  .cbody h3{font-family:var(--ui);font-weight:600;font-size:.98rem;color:var(--ink);line-height:1.3;}
+  .meta{font-size:.76rem;letter-spacing:.04em;color:var(--muted);text-transform:uppercase;}
+  .actions{margin-top:auto;display:flex;gap:.5rem;flex-wrap:wrap;}
+  .dl{display:inline-flex;align-items:center;gap:.4rem;background:var(--orange);color:#fff;text-decoration:none;font-weight:600;font-size:.86rem;padding:.5rem 1rem;border-radius:100px;transition:transform .15s,box-shadow .15s;}
+  .dl:hover,.dl:focus-visible{transform:translateY(-1px);box-shadow:0 10px 20px -8px rgba(240,120,48,.6);}
+  .dl svg{width:15px;height:15px;stroke:#fff;fill:none;stroke-width:2;}
+  .view{display:inline-flex;align-items:center;font-weight:600;font-size:.86rem;color:var(--navy);text-decoration:none;padding:.5rem .6rem;border-radius:100px;border:1.5px solid rgba(0,40,80,.18);}
+  .view:hover,.view:focus-visible{border-color:var(--orange);color:var(--orange);}
+  :focus-visible{outline:3px solid var(--amber);outline-offset:2px;border-radius:6px;}
+  .empty{padding:2rem;background:#fff;border-radius:14px;color:var(--muted);text-align:center;}
+  footer{background:var(--navy);color:#8FA6BC;padding:2.4rem 0;margin-top:2rem;font-size:.88rem;}
+  footer .fx{display:flex;align-items:center;gap:.6rem;}
+  footer .fx img{width:22px;height:22px;}
+  footer .tagline{font-family:var(--disp);font-style:italic;color:var(--gold);}
+  footer a{color:#C4D3E2;}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="wrap row">
+  <a class="brand" href="/"><img src="../assets/sunburst.svg" alt="" />One More Door</a>
+  <span class="tag">Media Kit</span>
+</div></div>
+
+<header class="hero"><div class="wrap">
+  <div class="eyebrow"><img src="../assets/sunburst.svg" alt="" />Teen Living Center · by Switchpoint</div>
+  <h1>Media Kit &amp; Downloads</h1>
+  <p>Photos, logos, and video for the Teen Living Center — free to use for Switchpoint's outreach, press, and fundraising. Grab whatever you need. More assets will be added over time.</p>
+  <div class="updated" id="updated"></div>
+</div></header>
+
+<main class="wrap" id="kit">
+  <div class="empty">Loading assets…</div>
+</main>
+
+<footer><div class="wrap fx">
+  <img src="../assets/sunburst.svg" alt="" />
+  <span>Assembled for the Teen Living Center team · <span class="tagline">It takes all of us.</span></span>
+</div></footer>
+
+<script>
+const fmt=b=>{if(!b&&b!==0)return"";const u=["B","KB","MB","GB"];let i=0,n=b;while(n>=1024&&i<3){n/=1024;i++;}return (n<10&&i>0?n.toFixed(1):Math.round(n))+" "+u[i];};
+const docIcon='<svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg>';
+const dlIcon='<svg viewBox="0 0 24 24"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg>';
+
+function card(item,isVideo){
+  const el=document.createElement('div');el.className='card';
+  let thumbHtml;
+  if(isVideo){
+    thumbHtml=`<a class="thumb" href="${item.embed}" target="_blank" rel="noopener" title="Watch">
+      <img src="${item.poster}" alt="" onerror="this.style.display='none'"/>
+      <span class="play"><span></span></span></a>`;
+  } else if(item.thumb){
+    const logo=item.file.match(/logo|sunburst/i)?' logo':'';
+    thumbHtml=`<a class="thumb${logo}" href="${item.file}" target="_blank" rel="noopener" title="View full size"><img src="${item.thumb}" alt="${item.title}"/></a>`;
+  } else {
+    thumbHtml=`<a class="thumb" href="${item.file}" target="_blank" rel="noopener"><span class="badge">${docIcon}<span class="t">${item.type}</span></span></a>`;
+  }
+  const metaBits=[item.type];if(item.bytes)metaBits.push(fmt(item.bytes));
+  const actions = isVideo
+    ? `${item.file?`<a class="dl" href="${item.file}" target="_blank" rel="noopener">${dlIcon}MP4</a>`:''}<a class="view" href="${item.embed}" target="_blank" rel="noopener">Watch</a>`
+    : `<a class="dl" href="${item.file}" download>${dlIcon}Download</a><a class="view" href="${item.file}" target="_blank" rel="noopener">View</a>`;
+  el.innerHTML=thumbHtml+`<div class="cbody"><h3>${item.title}</h3><div class="meta">${metaBits.join(' · ')}</div><div class="actions">${actions}</div></div>`;
+  return el;
+}
+
+fetch('manifest.json',{cache:'no-store'}).then(r=>r.json()).then(m=>{
+  document.getElementById('updated').textContent = m.updated ? ('Last updated '+new Date(m.updated).toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'})) : '';
+  const root=document.getElementById('kit');root.innerHTML='';
+  m.categories.forEach(cat=>{
+    if(!cat.items||!cat.items.length)return;
+    const sec=document.createElement('section');
+    const isVideo=cat.name==='Video';
+    sec.innerHTML=`<h2>${cat.name}</h2>${cat.note?`<div class="note">${cat.note}</div>`:''}`;
+    const grid=document.createElement('div');grid.className='grid';
+    cat.items.forEach(it=>grid.appendChild(card(it,isVideo)));
+    sec.appendChild(grid);root.appendChild(sec);
+  });
+}).catch(e=>{document.getElementById('kit').innerHTML='<div class="empty">Couldn\'t load the asset list. Please refresh.</div>';});
+</script>
+</body>
+</html>

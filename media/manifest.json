@@ -1,0 +1,128 @@
+{
+  "updated": "2026-07-01",
+  "categories": [
+    {
+      "name": "Photos",
+      "note": "Full-resolution JPG \u2014 click Download.",
+      "items": [
+        {
+          "title": "Student Bedroom",
+          "file": "files/bedroom.jpg",
+          "thumb": "thumbs/bedroom.jpg",
+          "type": "JPG",
+          "bytes": 3044492
+        },
+        {
+          "title": "Teen Living Center \u2014 Front Entrance",
+          "file": "files/building-front.jpg",
+          "thumb": "thumbs/building-front.jpg",
+          "type": "JPG",
+          "bytes": 3415695
+        },
+        {
+          "title": "Teen Living Center \u2014 Exterior (Hero)",
+          "file": "files/building-hero.jpg",
+          "thumb": "thumbs/building-hero.jpg",
+          "type": "JPG",
+          "bytes": 4251811
+        },
+        {
+          "title": "Common Room / Lounge",
+          "file": "files/common-room.jpg",
+          "thumb": "thumbs/common-room.jpg",
+          "type": "JPG",
+          "bytes": 2614290
+        }
+      ]
+    },
+    {
+      "name": "Logos",
+      "note": "Transparent background.",
+      "items": [
+        {
+          "title": "Sunburst Mark (SVG)",
+          "file": "files/sunburst-mark.svg",
+          "thumb": "files/sunburst-mark.svg",
+          "type": "SVG",
+          "bytes": 2674
+        },
+        {
+          "title": "Switchpoint Logo (PNG)",
+          "file": "files/switchpoint-logo.png",
+          "thumb": "thumbs/switchpoint-logo.jpg",
+          "type": "PNG",
+          "bytes": 23442
+        },
+        {
+          "title": "Teen Living Center Logo (PNG)",
+          "file": "files/teen-living-center-logo.png",
+          "thumb": "thumbs/teen-living-center-logo.jpg",
+          "type": "PNG",
+          "bytes": 149972
+        },
+        {
+          "title": "Teen Living Center Logo (WEBP)",
+          "file": "files/teen-living-center-logo.webp",
+          "thumb": "thumbs/teen-living-center-logo.jpg",
+          "type": "WEBP",
+          "bytes": 77998
+        }
+      ]
+    },
+    {
+      "name": "Print & Documents",
+      "note": "",
+      "items": [
+        {
+          "title": "\u201cWhere Stability Begins\u201d Graphic 1",
+          "file": "files/stability-flyer-1.jpg",
+          "thumb": "thumbs/stability-flyer-1.jpg",
+          "type": "JPG",
+          "bytes": 395510
+        },
+        {
+          "title": "\u201cWhere Stability Begins\u201d Graphic 2",
+          "file": "files/stability-flyer-2.jpg",
+          "thumb": "thumbs/stability-flyer-2.jpg",
+          "type": "JPG",
+          "bytes": 682824
+        },
+        {
+          "title": "TLC Brochure Panel",
+          "file": "files/tlc-brochure.jpg",
+          "thumb": "thumbs/tlc-brochure.jpg",
+          "type": "JPG",
+          "bytes": 620878
+        },
+        {
+          "title": "TLC FAQ Tri-Fold Brochure (PDF)",
+          "file": "files/tlc-faq-trifold.pdf",
+          "thumb": null,
+          "type": "PDF",
+          "bytes": 8053689
+        },
+        {
+          "title": "Peachjar Flyer",
+          "file": "files/tlc-peachjar-flyer.jpg",
+          "thumb": "thumbs/tlc-peachjar-flyer.jpg",
+          "type": "JPG",
+          "bytes": 2929854
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "note": "Hosted on Cloudflare Stream.",
+      "items": [
+        {
+          "title": "Teen Living Center \u2014 Film",
+          "stream_uid": "e6d372aa80c2623d7c8f2a7bb8481dd1",
+          "poster": "https://videodelivery.net/e6d372aa80c2623d7c8f2a7bb8481dd1/thumbnails/thumbnail.jpg?time=3s&height=480",
+          "embed": "https://iframe.videodelivery.net/e6d372aa80c2623d7c8f2a7bb8481dd1",
+          "type": "MP4",
+          "file": "https://customer-iy642ze20tq7w2hz.cloudflarestream.com/e6d372aa80c2623d7c8f2a7bb8481dd1/downloads/default.mp4"
+        }
+      ]
+    }
+  ]
+}
