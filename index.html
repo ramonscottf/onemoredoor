@@ -397,6 +397,21 @@
   document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(Math.min(i%4,3)*70)+'ms';io.observe(el);});
   const hdr=document.getElementById('hdr');
   addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>10),{passive:true});
+
+  // Donate — open the real donation form in a focused popup window over our page.
+  // (GoFundMe locks the embed to switchpoint.org, so we open their whitelisted page,
+  //  which auto-opens the giving form. Money goes straight to Switchpoint.)
+  const DONATE_URL='https://switchpoint.org/?campaign=775634';
+  function openDonate(e){
+    if(e){e.preventDefault();}
+    const w=720,h=820;
+    const bx=(window.screenX||0)+((window.outerWidth||window.screen.width)-w)/2;
+    const by=(window.screenY||0)+((window.outerHeight||window.screen.height)-h)/2;
+    const win=window.open(DONATE_URL,'omd_donate','popup=yes,width='+w+',height='+h+',left='+Math.max(0,Math.round(bx))+',top='+Math.max(0,Math.round(by))+',scrollbars=yes,resizable=yes');
+    if(win){win.focus();}else{window.open(DONATE_URL,'_blank','noopener');}
+    return false;
+  }
+  document.querySelectorAll('a[href*="campaign=775634"]').forEach(a=>a.addEventListener('click',openDonate));
 </script>
 </body>
 </html>
