@@ -82,18 +82,15 @@
   @media(max-width:720px){.nav-links a.textlink{display:none;}}
 
   /* hero */
-  .hero{background:radial-gradient(120% 90% at 88% -10%,rgba(248,168,56,.22),transparent 42%),linear-gradient(180deg,#002850,#00203f);color:#fff;padding:clamp(3.5rem,7vw,6rem) 0 clamp(4rem,8vw,6.5rem);overflow:hidden;}
-  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,4rem);align-items:center;}
-  @media(max-width:860px){.hero-grid{grid-template-columns:1fr;}}
-  .hero h1{font-size:clamp(2.9rem,7vw,4.7rem);color:#fff;line-height:1.02;}
+  .hero{position:relative;color:#fff;padding:clamp(5rem,12vw,9rem) 0 clamp(4.5rem,10vw,8rem);overflow:hidden;display:flex;align-items:center;min-height:88vh;}
+  .hero-bg{position:absolute;inset:0;z-index:0;background:linear-gradient(90deg,rgba(0,22,44,.95),rgba(0,32,63,.82) 42%,rgba(0,32,63,.5) 72%,rgba(0,32,63,.3)),radial-gradient(120% 90% at 88% -10%,rgba(248,168,56,.16),transparent 42%),url('assets/building-hero.jpg') center/cover no-repeat;}
+  @media(max-width:860px){.hero-bg{background:linear-gradient(180deg,rgba(0,22,44,.82),rgba(0,32,63,.94)),url('assets/building-hero.jpg') center 20%/cover no-repeat;}}
+  .hero-inner{position:relative;z-index:2;max-width:40rem;}
+  .hero h1{font-size:clamp(2.9rem,7vw,4.7rem);color:#fff;line-height:1.02;text-shadow:0 2px 30px rgba(0,16,32,.35);}
   .hero h1 em{font-style:italic;color:var(--gold);}
-  .hero .sub{margin-top:1.3rem;font-size:clamp(1.08rem,2.2vw,1.3rem);color:#D3E0EE;max-width:30rem;}
-  .hero .lockup{margin-top:2.2rem;display:flex;align-items:center;gap:.7rem;color:#9FB4C8;font-size:.82rem;letter-spacing:.02em;}
+  .hero .sub{margin-top:1.3rem;font-size:clamp(1.08rem,2.2vw,1.3rem);color:#E7EFF7;max-width:32rem;text-shadow:0 1px 14px rgba(0,18,36,.45);}
+  .hero .lockup{margin-top:2.2rem;display:flex;align-items:center;gap:.7rem;color:#BBCADB;font-size:.82rem;letter-spacing:.02em;}
   .hero .lockup img{width:26px;height:26px;opacity:.9;}
-  .hero-photo{position:relative;}
-  .hero-photo img{border-radius:18px;box-shadow:0 30px 70px -30px rgba(0,0,0,.7);aspect-ratio:4/3.1;object-fit:cover;width:100%;}
-  .hero-photo .burst{position:absolute;width:150px;height:150px;right:-34px;top:-34px;opacity:.9;z-index:-1;}
-  @media(max-width:860px){.hero-photo .burst{display:none;}}
 
   /* reveal */
   .reveal{opacity:0;transform:translateY(24px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1);}
@@ -191,8 +188,9 @@
 
 <!-- HERO -->
 <section class="hero">
-  <div class="wrap hero-grid">
-    <div class="reveal">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hero-inner reveal">
       <div class="eyebrow"><img src="assets/sunburst.svg" alt="" />Teen Living Center · Davis County</div>
       <h1>One More<br><em>Door</em></h1>
       <p class="sub">Every night, sixteen high-school students who had nowhere to go have a safe place to sleep. The doors are open — keeping them open is up to all of us.</p>
@@ -201,10 +199,6 @@
         <a href="https://switchpoint.org/?campaign=775634" target="_blank" rel="noopener" class="btn btn-ghost">Give monthly</a>
       </div>
       <div class="lockup"><img src="assets/sunburst.svg" alt="" />Supporting the Teen Living Center, operated by Switchpoint</div>
-    </div>
-    <div class="hero-photo reveal">
-      <img src="assets/building-hero.jpg" alt="The Teen Living Center at 75 Fort Lane in Layton, Utah" />
-      <img src="assets/sunburst.svg" class="burst" alt="" />
     </div>
   </div>
 </section>
